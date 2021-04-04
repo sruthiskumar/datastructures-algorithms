@@ -31,7 +31,8 @@ calculateComplexity(int N, int M) {
  ```
 
 O(N+M) 
-*NOTE* Complexity is additive
+
+*NOTE:* Complexity is additive
 
 Example 2:
 
@@ -45,4 +46,19 @@ calculateComplexity(int N, int M) {
  ```
 
 O(N*M) 
-*NOTE* Complexity is Multiplicative
+
+*NOTE:* Complexity is Multiplicative
+
+Example 3:
+
+```
+calculateComplexity(int N) {
+    for (int i = 1; i < N;) {
+      do something;
+      i = i*2;
+    }
+ }
+ ```
+ O(logN)
+ 
+*NOTE:* Any time if we half the input(Example: Binary Search) or go twice as fast at every step of input the complexity is logN. 
