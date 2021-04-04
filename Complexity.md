@@ -16,3 +16,33 @@ Allows to express complexity as a measure of input size. Tells us how the algori
 - O(N^2): Time taken increases quadrtically based on input size.
 
 ``O(1) < O(log N) < O(N) < O(NlogN) < O(N^2) < O(2^N)``
+
+Example 1:
+
+```
+calculateComplexity(int N, int M) {
+    for (int i = 0; i < N; i++ {
+    do something;
+    } 
+    for (int i = 0; i < M; i++ {
+    do something;
+    }
+ }
+ ```
+
+O(N+M) 
+*NOTE* Complexity is additive
+
+Example 2:
+
+```
+calculateComplexity(int N, int M) {
+    for (int i = 0; i < N; i++ {
+      for (int i = 0; i < M; i++ {
+      do something;
+    }
+ }
+ ```
+
+O(N*M) 
+*NOTE* Complexity is Multiplicative
