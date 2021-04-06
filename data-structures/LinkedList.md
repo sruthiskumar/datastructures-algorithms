@@ -6,7 +6,7 @@
 - Last element in a Linked List points to null
 - Each element in a linked list has a data/element and a pointer/reference to the next element (i.e, A single node in a linked list consists of data and a reference as in the below diagram
 
-![Linked List](linkedlist.png)
+![LinkedList](images/linkedlist.png)
 
 - In Java Node is implemented as a Generic class so that it can hold any data type
 - The Data should implement comparable for equality checks for example to find the index of a particular element
@@ -38,6 +38,8 @@ public class Node<T extend Comparable<T>> {
 ```
 
 - For Linked list traversal, we traverse till a null is encountered
+
+![LinkedListTraversal](images/LinkedListTraversal.png)
 
 ```
 Node<String> current = head;
