@@ -86,13 +86,34 @@ public int countNodes(Node<T> head) {
 Add a new node to the end of Linked List
 
 ```
-public void addNode(Node<T> newNode) {
+public void addNode(T data) {
+
+  if(head == null) {
+      head = new Node(data);
+  }
   Node current = head;
   
   while(current.getNext() != null) {
     current = current.getNext();
   }
   
-  current.setNext(newNode);
+  current.setNext(new Node(data));
 }
 ```
+
+
+#### Pop and return first element
+Return first element in a list 
+
+```
+public T getNode() {
+
+  if(head == null) {
+      return null;
+  }
+  
+  T data = head.getData();
+  head = head.getNext();
+  
+  return data;
+}
