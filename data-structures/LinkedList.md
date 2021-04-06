@@ -47,3 +47,13 @@ while(current != null) {
     current = current.getNext();
 }
 ```
+
+### Complexity
+
+Operation | Complexity|
+--- | --- | 
+add (to end)| O(N) |
+add (to start)| O(1) |
+contains | O(N) |
+delete (first element) | O(1) |
+delete (any element) | O(N) |
