@@ -86,5 +86,13 @@ public int countNodes(Node<T> head) {
 Add a new node to the end of Linked List
 
 ```
-public void
+public void addNode(Node<T> newNode) {
+  Node current = head;
+  
+  while(current.getNext() != null) {
+    current = current.getNext();
+  }
+  
+  current.setNext(newNode);
+}
 ```
