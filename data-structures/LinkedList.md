@@ -57,3 +57,34 @@ add (to start)| O(1) |
 contains | O(N) |
 delete (first element) | O(1) |
 delete (any element) | O(N) |
+
+### Problems
+
+#### Count Nodes
+Count the total number of Nodes in a Linked List
+
+```
+public int countNodes(Node<T> head) {
+
+  if(head == null) {
+    return 0;
+  } 
+  
+  Node<T> current = head;
+  int count = 0;
+  
+  while(current != null) {
+    current = current.getNext();
+    count++;
+    }
+    
+  return count;
+}
+```
+
+#### Add a Node
+Add a new node to the end of Linked List
+
+```
+public void
+```
