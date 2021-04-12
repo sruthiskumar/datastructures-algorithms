@@ -117,3 +117,15 @@ public T getNode() {
   
   return data;
 }
+```
+
+## LinkedList vs Array
+LinkedList | Array|
+--- | --- | 
+List Size are unlimited and can grow dynamically | Need to know the size in advance and cannot increase later|
+Insertion is easy and just need to know the location pointer | Arrays are located in contigupus memory locations and inorder to insert an element, the elements in the right needs to be moved | 
+Deletion is easy and similar to insertion | Array elements needs to be moved in case of deletion as well |
+Random access based on index not possible. Need to traverse through the entire list to find the element | Fast lookup for an element in a particular index as they are in contiguous memory locations we know where exactly in memory the lement resides|
+Every element requires additional space to store pointer to next element|No extra space required than the ones for the actual elements of the array|
+Cannot take advantage of spacial locality(for caching) when accessing the elements (As each element can live anywhere in the memory and can be pointed to) | Arrays takes advantage of spacial locality in cache |
+**Used:** <ul><li> When large number of insertions and deletions</li> <li>When we do not know the size of list in advance (dynamic resizing)</li></ul>| **Used:** <ul><li> When we require random access/li><li> When we need faster read operations</li></ul>|
